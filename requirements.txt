@@ -16,13 +16,19 @@ sounddevice>=0.4.6
 soundfile>=0.12.1
 scipy>=1.11.0
 numpy>=1.24.0
+gTTS>=2.5.0
+pygame>=2.5.0
+piper-tts>=1.2.0
+SpeechRecognition>=3.10.0
 
 # Browser
 playwright>=1.40.0
 
+# System
+psutil>=5.9.0
+
 # UI
 streamlit>=1.28.0
-requests>=2.31.0
 
 # Testing
 pytest>=7.4.0

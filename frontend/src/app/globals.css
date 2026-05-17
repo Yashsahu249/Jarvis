@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#E0E5EC] font-sans text-foreground antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent/20 text-foreground;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-[#E0E5EC];
+  }
+}
+
+@layer components {
+  .neu-extruded {
+    @apply shadow-extruded;
+  }
+
+  .neu-extruded-hover {
+    @apply shadow-extruded-hover;
+  }
+
+  .neu-extruded-sm {
+    @apply shadow-extruded-sm;
+  }
+
+  .neu-inset {
+    @apply shadow-inset;
+  }
+
+  .neu-inset-deep {
+    @apply shadow-inset-deep;
+  }
+
+  .neu-inset-sm {
+    @apply shadow-inset-sm;
+  }
+
+  .neu-card {
+    @apply rounded-2xl bg-[#E0E5EC] shadow-extruded transition-shadow duration-300;
+  }
+
+  .neu-card:hover {
+    @apply shadow-extruded-hover;
+  }
+
+  .neu-card-inset {
+    @apply rounded-2xl bg-[#E0E5EC] shadow-inset;
+  }
+
+  .neu-button {
+    @apply rounded-2xl bg-[#E0E5EC] shadow-extruded-sm transition-all duration-200 hover:shadow-extruded-hover active:shadow-inset-sm;
+  }
+
+  .neu-input {
+    @apply rounded-2xl bg-[#E0E5EC] shadow-inset-sm transition-shadow duration-200 focus:shadow-inset focus:outline-none;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/20 backdrop-blur-xl;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent to-accent-secondary bg-clip-text text-transparent;
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #c4cad4 #e0e5ec;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: #e0e5ec;
+    border-radius: 8px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #c4cad4;
+    border-radius: 8px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #b0b8c4;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

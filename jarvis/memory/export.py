@@ -8,7 +8,8 @@ from jarvis.config.settings import get_settings
 from jarvis.utils.logger import JarvisLogger
 
 
-CHAT_DIR = Path("/mnt/hdd/Downloads/saved chat data")
+_HDD_PATH = Path("/mnt/hdd/Downloads/saved chat data")
+CHAT_DIR = _HDD_PATH if _HDD_PATH.exists() else Path("data/saved_chats")
 
 
 def ensure_chat_dir():
