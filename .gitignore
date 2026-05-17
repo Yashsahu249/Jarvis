@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+
+# Environment
+.env
+.env.local
+
+# Data
+data/
+!data/.gitkeep
+*.db
+*.sqlite
+
+# Audio
+*.wav
+*.mp3
+*.flac
+
+# Screenshots
+screenshots/
+*.png
+*.jpg
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Repos
+repos/
+
+# Voice models (download separately)
+voices/*.onnx
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# Node
+node_modules/
+package-lock.json
